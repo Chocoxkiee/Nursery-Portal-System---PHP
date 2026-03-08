@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Source+Serif+Pro:wght@300;400;600;700&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  line-height: 1.7rem;
+  --green-main: #4CAF50;
+  --green-dark: #388E3C;
+  --text-dark: #222;
+  --text-light: #555;
+  --highlight: #6ABF69;
+  --bg-light: #f0fdf4;
+  --border-radius: 15px;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Source Serif Pro', serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1.8rem;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.logo h1, .f-logo h1 {
+  color: var(--text-dark);
+  font-size: 2.4rem;
+}
+
+.logo span, .f-logo span {
+  color: var(--green-main);
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--text-light);
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--green-main);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--text-light);
+}
+
+p {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+}
+
+.container, .small-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 2.5rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-1, .col-2 {
+  flex-basis: 48%;
+  min-width: 300px;
+}
+
+.col-2 img {
+  max-width: 100%;
+}
+
+.col-1 h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.btn, .buy-btn {
+  display: inline-block;
+  background-color: var(--green-main);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1.2rem auto;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover, .buy-btn:hover {
+  background-color: var(--green-dark);
+}
+
+.header, .offer {
+  background: radial-gradient(#ffffff, #e6f4ea);
+}
+
+.categories, .testimonial, .brands {
+  margin: 5rem 0;
+}
+
+.categories h1, .title {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.categories p, .small-container p {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1.5rem 0;
+}
+
+.col, .col-4, .col-3 {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.col img, .col-4 img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--green-main);
+}
+
+.col h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--text-dark);
+}
+
+.col h3 span {
+  color: var(--green-main);
+}
+
+.col-4 h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-dark);
+}
+
+.col-4 p {
+  font-size: 1.3rem;
+  color: var(--text-light);
+}
+
+.col-4:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+.col-3 {
+  padding: 4rem 2rem;
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.col-3 img {
+  width: 50px;
+  margin-top: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--green-main);
+}
+
+.col-3:hover {
+  transform: translateY(-10px);
+}
+
+.col-3 .fa-quote-left {
+  font-size: 1.8rem;
+  color: var(--green-main);
+}
+
+.col-3 .rating, .col-3 span {
+  color: var(--green-main);
+}
+
+.col-3 h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.col-5 {
+  width: 120px;
+  flex-basis: 19%;
+}
+
+.col-5 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.col-5 img:hover {
+  filter: grayscale(0%);
+}
+
+.footer {
+  background-color: #1b1b1b;
+  color: #8a8a8a;
+  padding: 6rem 0 2rem;
+  font-size: 1.4rem;
+}
+
+.footer h3 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.footer p {
+  color: #aaa;
+}
+
+.footer-col-1 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.app-logo img {
+  width: 140px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.footer hr {
+  border: none;
+  height: 1px;
+  background-color: #555;
+  margin: 2rem 0;
+}
